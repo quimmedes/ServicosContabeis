@@ -1,0 +1,54 @@
+object Form11: TForm11
+  Left = 104
+  Top = 55
+  Width = 696
+  Height = 480
+  Caption = 'INSCRI'#199#195'O PRODUTOR RURAL'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 40
+    Width = 61
+    Height = 13
+    Caption = 'PROCURAR'
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 120
+    Width = 680
+    Height = 322
+    Align = alBottom
+    DataSource = Form4.DataSource1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object Edit1: TEdit
+    Left = 128
+    Top = 40
+    Width = 305
+    Height = 21
+    TabOrder = 1
+    OnChange = Edit1Change
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 152
+    Top = 72
+    Width = 240
+    Height = 25
+    DataSource = Form4.DataSource1
+    TabOrder = 2
+  end
+end
